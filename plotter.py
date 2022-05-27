@@ -1,14 +1,11 @@
-import matplotlib.pyplot as plt
-from numpy import poly1d
 import pandas as pd
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import PolynomialFeatures
+import matplotlib.pyplot as plt
+import plotly.express as px
+import streamlit as st
 
 df = pd.read_csv("data/def/data_1.csv")
 
-x = df[["time"]]
-y = df[["acceleration"]]
+# plot time and position of df as x and y axis using plotly express on streamlit app
 
-plt.plot(x, y)
-plt.show()
+
+# add a new column to df that is the variation of velocity divided by the variation of time
