@@ -36,7 +36,7 @@ st.write("Si è utilizzata una massa di 0.07804 kg collegata ad un filo lungo 35
          ", muovendola con una velocità v2")
 
 st.write("Dal grafico tempo/posizione si nota come il moto sia quasi perfettamente uniforme, "
-         + "l'azione dell'attrito è minima. Il valore R^2 della linea di tangenza è infatti molto prossimo a 1.0")
+         + "l'azione dell'attrito è minima. Il valore R^2 della linea di tendenza è infatti molto prossimo a 1.0")
 # plot time and position of df as x and y axis using plotly express on streamlit app
 position_graph = px.scatter(
     df, x="time", y="position", color="position", trendline="ols")
