@@ -59,7 +59,7 @@ v2 = v1 * (m1 + m1) / (m1 + m2)
 st.write("Il sensore ad ultrasuoni utilizzato non ha una buona precisione, quindi in alcuni ",
          "intervalli di tempo non segnava una variazione di posizione. Questo ha portato ad avere velocità",
          " nei vari intervalli molto diverse tra di loro. Nonostante ciò, la velocità media ",
-         " si discosta di 0.01 in quasi tutti i dataset.")
+         " si discosta di 0.01 m/s in quasi tutti i dataset.")
 # add a new column named velocity to df that is the variation of position divided by the variation of time
 df["velocity"] = round(df["position"].diff() / df["time"].diff(), 4)
 df = df.iloc[1:]
