@@ -89,8 +89,10 @@ st.write("Velocità media:", round(df["velocity"].mean(), 4))
 
 # velocity of m2 in elastic collision between m1 and m2, m1 has velocity v1, m2 has velocity v2
 v2 = v1 * (m1 + m1) / (m1 + m2)
+v2 = round(v2, 4)
 
-st.write("La velocità che ci aspettavamo è: ", round(-v2, 4))
+# write the latex formulao of v2
+st.latex("v2 = " + str(-v2) + " = v1 * (m1 + m1) / (m1 + m2)")
 
 # calculate the measure error of velocity with standard error
 st.write("L'errore assoluto è: ", round(df["velocity"].sem(), 4))
